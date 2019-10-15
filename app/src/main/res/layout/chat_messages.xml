@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/receiver"
+        android:layout_width="175dp"
+        android:layout_height="90dp"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:id="@+id/message_userText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="12dp"
+            android:gravity="left"
+            android:hint="jdjsdkjfkjsd"
+            android:textColor="@color/colorDark"
+            android:textStyle="normal|bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sender"
+        android:layout_width="185dp"
+        android:layout_height="90dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/message_userText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="12dp"
+            android:gravity="right"
+            android:hint="jdjsdkjfkjsd"
+            android:paddingRight="10dp"
+            android:textColor="@color/colorDark"
+            android:textStyle="normal|bold" />
+
+    </LinearLayout>
+
+</LinearLayout>
+

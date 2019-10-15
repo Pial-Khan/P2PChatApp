@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    tools:context=".MainActivity">
+
+
+
+    <EditText
+        android:id="@+id/messageEditText"
+        android:layout_width="288dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/list_of_message"
+        android:layout_marginEnd="111dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:hint="Message"
+        android:inputType="textPersonName"
+        android:text="Hello"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/list_of_message"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <Button
+        android:id="@+id/buttonColor"
+        android:layout_width="121dp"
+        android:layout_height="84dp"
+        android:layout_below="@+id/messageEditText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="278dp"
+        android:background="@drawable/color"
+        android:onClick="onColorClicked"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/ConnectFriend"
+        android:layout_width="133dp"
+        android:layout_height="94dp"
+        android:layout_below="@+id/list_of_message"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="221dp"
+        android:layout_marginEnd="128dp"
+        android:onClick="onConnectFriendClicked"
+        android:text=""
+        android:background="@drawable/connect"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ListView
+        android:id="@+id/list_of_message"
+        android:layout_width="411dp"
+        android:layout_height="358dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-6dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="6dp"
+        android:background="@color/colorWhite"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="16dp"
+        android:fitsSystemWindows="false"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/connectButton">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="65dp"
+        android:layout_height="53dp"
+        android:layout_below="@+id/list_of_message"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:background="@drawable/sends"
+        android:onClick="onSendClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.827"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/saveChat"
+        android:layout_width="wrap_content"
+        android:layout_height="84dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/messageEditText"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="289dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/saveile"
+        android:onClick="onSaveClicked"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.827"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/sendTextFile"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/messageEditText"
+        android:layout_marginEnd="133dp"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/sendfile2"
+        android:onClick="onSendTextFileClicked"
+        android:text=""
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.827"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</RelativeLayout>
