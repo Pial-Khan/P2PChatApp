@@ -1,7 +1,7 @@
 P2PChatApp :
 
-This is an android messaging application.Using this application users can connect their android devices udnder a wi-fi network 
-and communicate with each other through P2P socket pragramming.
+This is an android messaging application. Using this application users can connect their android devices under a wi-fi network 
+and communicate with each other through P2P socket programming.
 
 
 Base Features:
